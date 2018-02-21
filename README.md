@@ -27,7 +27,7 @@ Plugins and themes are located outside the wp folder, so we can manage separatel
 
 >4. Create **.gitignore**
 
->5. Install WordPress: run **composer install**
+>5. Install WordPress: run **composer install** (or php composer.phar install)
 
 >6. Copy and move
 ```

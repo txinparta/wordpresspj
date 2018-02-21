@@ -3,9 +3,9 @@ Plugins and themes are located outside the wp folder, so we can manage them sepa
 
 **Structure**
 - public/
-  - wp-content/ &emsp;&emsp;&nbsp;&nbsp;It contains plugins and themes
-  - wp/	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Our subdirectory install location for WordPress
-  - .htaccess &emsp;&emsp;&emsp;&emsp;If necessary
+  - wp-content/ &emsp;&emsp;&nbsp;&nbsp;- It contains plugins and themes
+  - wp/	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- Our subdirectory install location for WordPress
+  - .htaccess &emsp;&emsp;&emsp;&emsp;- If necessary
   - index.php
   - wp-config.php
 
@@ -18,8 +18,8 @@ Plugins and themes are located outside the wp folder, so we can manage them sepa
 
 # Starting our project
 
->1. Create a folder: **mkdir my_folder**
-- Be sure you have composer installed. If you don't have it installed globaly, you can donwload the composer.phar localy (<code>curl -sS https://getcomposer.org/installer | php</code>)
+>1. Create a folder: **mkdir my_folder**</br>
+\* Be sure you have Composer installed. If you don't have it globaly installed, you can donwload the composer.phar localy (<code>curl -sS https://getcomposer.org/installer | php</code>)
 
 >2. Create folder **my_folder/public/**
 
@@ -42,8 +42,8 @@ Plugins and themes are located outside the wp folder, so we can manage them sepa
 	require( dirname( __FILE__ ) . '/wp/wp-blog-header.php' );
 ```
 
->8. Configure **local-config.php**. 
+>8. Configure **local-config.php**.</br>
 Fill out database data connection and keys (https://api.wordpress.org/secret-key/1.1/salt/).
 
->9. Configure **public/wp-config.php**
+>9. Configure **public/wp-config.php**.</br>
 In the same way as it is in this repository.

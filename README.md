@@ -1,11 +1,11 @@
 # WordPress clean instalation through Composer
-Plugins and themes are located outside the wp folder, so we can manage separately on one hand themes and plugins and on the other wordpress itself.
+Plugins and themes are located outside the wp folder, so we can manage them separately: on one hand themes and plugins and on the other wordpress itself.
 
 **Structure**
 - public/
-  - wp-content/
-  - wp/         <-- Our subdirectory install location for WordPress
-  - .htaccess   <-- If necessary
+  - wp-content/ &emsp;&emsp;&nbsp;&nbsp;It contains plugins and themes
+  - wp/	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Our subdirectory install location for WordPress
+  - .htaccess &emsp;&emsp;&emsp;&emsp;If necessary
   - index.php
   - wp-config.php
 
@@ -19,7 +19,7 @@ Plugins and themes are located outside the wp folder, so we can manage separatel
 # Starting our project
 
 >1. Create a folder: **mkdir my_folder**
-- Be sure you have composer installed. If you don't have it installed globaly, you can donwload the composer.phar localy (curl -sS https://getcomposer.org/installer | php)
+- Be sure you have composer installed. If you don't have it installed globaly, you can donwload the composer.phar localy (<code>curl -sS https://getcomposer.org/installer | php</code>)
 
 >2. Create folder **my_folder/public/**
 
@@ -27,7 +27,7 @@ Plugins and themes are located outside the wp folder, so we can manage separatel
 
 >4. Create **.gitignore**
 
->5. Install WordPress: run **composer install** (or php composer.phar install)
+>5. Install WordPress: run **composer install** (or <code>php composer.phar install</code>)
 
 >6. Copy and move
 ```
@@ -43,7 +43,7 @@ Plugins and themes are located outside the wp folder, so we can manage separatel
 ```
 
 >8. Configure **local-config.php**. 
-Fill out Database data and keys (https://api.wordpress.org/secret-key/1.1/salt/) in local-config.php
+Fill out database data connection and keys (https://api.wordpress.org/secret-key/1.1/salt/).
 
 >9. Configure **public/wp-config.php**
-In the same way as it is in the example of txinparta/wordpresspj.
+In the same way as it is in this repository.

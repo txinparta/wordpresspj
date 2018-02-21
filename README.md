@@ -26,12 +26,7 @@ Plugins and themes are located outside the wp folder, so we can manage separatel
 >3. Create **composer.json**. Copy the file uploaded in txinparta/wordpresspj
 
 >4. Create **.gitignore**
-```
-/public/wp
-/vendor
-production-config.php
-local-config.php
-```
+
 >5. Install WordPress: run **composer install**
 
 >6. Copy and move
@@ -47,5 +42,8 @@ local-config.php
 	require( dirname( __FILE__ ) . '/wp/wp-blog-header.php' );
 ```
 
-## Configure local-config.php. 
-Database data and keys (https://api.wordpress.org/secret-key/1.1/salt/)
+>8. Configure **local-config.php**. 
+Fill out Database data and keys (https://api.wordpress.org/secret-key/1.1/salt/) in local-config.php
+
+>9. Configure **public/wp-config.php**
+In the same way as it is in the example of txinparta/wordpresspj.

@@ -3,25 +3,29 @@
         {
             "type": "package",
             "package": {
-                "name": "wordpress",
+                "name": "wordpress/wordpress",
                 "type": "webroot",
-                "version": "4.9",
+                "version": "6.2",
                 "dist": {
                     "type": "zip",
                     "url": "https://wordpress.org/latest.zip"
                 },
                 "require" : {
-                    "fancyguy/webroot-installer": "1.0.0"
+                    "fancyguy/webroot-installer": "1.0"
                 }
             }
         }
     ],
     "require": {
-        "wordpress": "4.*",
-        "fancyguy/webroot-installer": "1.0.0"
+        "wordpress/wordpress": "6.*"
     },
     "extra": {
         "webroot-dir": "public/wp",
-        "webroot-package": "wordpress"
+        "webroot-package": "wordpress/wordpress"
+    },
+    "config": {
+        "allow-plugins": {
+            "fancyguy/webroot-installer": true
+        }
     }
 }
